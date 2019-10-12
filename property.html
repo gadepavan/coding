@@ -1,1 +1,202 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Property</title>
+	<style type="text/css">
+		body
+		{
+			background-image: url("k.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		#container
+		{
+			display: grid;
+			grid-template-areas: 
+			'a b b b b b b b b b'
+			'c c c c c c c c c c'
+			'd d d d d d d d d d'
+			'e f f g h h i j j k'
+			'l l l l l l l l l l'
+			'm m m m m m m m m m'
+			'n n n n n n n n n n'
+			'o o o o o o o o o o'
+		}
+		#head
+		{
+			background-color:green;
+			height: 60px;
+			grid-area: a;
+		}
+		#head1
+		{
+			background-color: green;
+			height: 60px;
+			grid-area: b;
+		}
+		#head2
+		{
+			background-color: transparent;
+			height: 250px;
+			grid-area: c;
+		}
+		#a
+		{
+			text-decoration: none;
+			color: white;
+			padding-left: 110px;
+		}
+		#b
+		{
+			width: 200px;
+			height: 30px;
+		}
+		#head3
+		{
+			background-color: transparent;
+			height: 50px;
+			grid-area: d;
+		}
+		#l
+		{
+			grid-area: e;
+			background-color: transparent;
+			height: 250px;
+		}
+		#l1
+		{
+			grid-area: f;
+			background-image: url("b.jpg");
+			border: 2px solid silver;
+			background-size: cover;
+			height: 250px;
+		}
+		#m
+		{
+			grid-area: g;
+			background-color: transparent;
+			height: 250px;
+		}
+		#m1
+		{
+			grid-area: h;
+			background-image: url("amar.jpg");
+			border: 2px solid silver;
+			background-size: cover;
+			height: 250px;
+		}
+		#r
+		{
+			grid-area: i;
+			background-color: transparent;
+			height: 250px;
+		}
+		#r1
+		{
+			grid-area: j;
+			background-image: url("x.jpg");
+			background-size: cover;
+			border: 2px solid silver;
+			height: 250px;
+		}
+		#t
+		{
+			grid-area: k;
+			background-color: transparent;
+			height: 250px;
+		}
+		#t1
+		{
+			grid-area: l;
+			background-color: transparent;
+			height: 30px;
+		}
+		#bot
+		{
+			background-color: silver;
+			grid-area: m;
+			height: 40px;
+		}
+		#bottom
+		{
+			background-color: lightblue;
+			grid-area: n;
+			height: 130px;
+		}
+		#bottom1
+		{
+			grid-area: o;
+			background-color: lightblue;
+			height:30px;
+		}
+		#a:hover
+		{
+			color: brown;
+		}
+	</style>
+</head>
+<body>
+<form>
+	<div id="container">
+		<div id="head">
+			<img src="logo.jpg" width="150px" height="60px">
+		</div>
+		<div id="head1">
+			<br>
+			<a href="buy.html" id="a">Buy</a>
+			<a href="rent.html" id="a">Rent</a>
+			<a href="sell.html" id="a">Sell</a>
+			<a href="contact.html" id="a">Contact us</a>
+			<a href="signup.html" id="a">Sign up</a>
+			<a href="post.html" id="a">Post property for free</a>
+		</div>
+		<div id="head2">
+			<br><br><br><br>
+			<center><select id="b">
+				<option>Location</option>
+			</select>
+			<select id="b">
+				<option>Property Type</option>
+			</select>
+			<select id="b">
+				<option>Budget</option>
+			</select>
+			<input type="button" value="search" style="width: 80px; height: 30px;"></center>
+		</div>
+		<div id="head3">
+			<small style="font-size: 30px;color: red;"><center>Project Gallery</center></small>
+		</div>
+		<div id="l"></div>
+		<div id="l1">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><a href="#" style="color: white;float: right;">view details</a>
+		</div>
+		<div id="m"></div>
+		<div id="m1">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><a href="#" style="color: white;float: right;">view details</a>
+		</div>
+		<div id="r"></div>
+		<div id="r1">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><a href="#" style="color: white;float: right;">view details</a>
+		</div>
+		<div id="t"></div>
+		<div id="t1"></div>
+		<div id="bot">
+			<small style="font-size: 30px;color: black;"><center>What makes us preferred choice</center></small>
+		</div>
+		<div id="bottom">
+			<img src="logo.png" width="100px" height="100px" style="padding-top: 20px;padding-left: 85px;padding-right: 200px;">
+				<img src="submit.png" width="100px" height="100px" style="padding-top: 20px;padding-left: 20px;padding-right: 200px;">
+				<img src="ike.png" width="100px" height="100px" style="padding-top: 20px;padding-left: 20px;padding-right: 200px;">
+				<img src="sand.svg" width="100px" height="100px" style="padding-top: 20px;padding-left: 20px;">
+		</div>
+		<div id="bottom1">
+			<small style="font-size: 20px;padding-left: 55px;">Maximum Choices</small>
+				<small style="font-size: 20px;padding-left: 185px;">Buyers Trust Us</small>
+				<small style="font-size: 20px;padding-left: 190px;">Seller Prefer Us</small>
+				<small style="font-size: 20px;padding-left: 190px;">Expert Guidance</small>
+		</div>
+	</div>
+</form>
+</body>
+</html>
