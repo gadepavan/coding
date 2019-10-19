@@ -30,7 +30,7 @@
 <h1 style="color: red;">Signup</h1>
 	<table>
 		<tr>
-			<td>Name:</td>
+			<td>Nafvrfrfrme:</td>
 			<td><input type="text" id="1"></td>
 		</tr>
 		<tr>
