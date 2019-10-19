@@ -1,1 +1,103 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript 2</title>
+	<style type="text/css">
+		td
+		{
+			color: green;
+		}
+		form
+		{
+			margin: 80px;
+			background-color: white;
+			width: 50%;
+		}
+		form:hover
+		{
+			background-color: pink;
+			transition: 2s linear;
+		}
+		body
+		{
+			background-image: url("dominos1.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		#a,#b,#c,#d,#e,#f,#g,#h,#i,#j
+		{
+			width: 50%;
+		}
+		td
+		{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<a href="java.html"><input type="button" value="Back" style="color: white;background-color: brown;"></a>
+	<a href="java3.html"><input type="button" value="Next" style="color: white;background-color: brown; float: right;"></a>
+	<center>
+	<form>
+<table>
+	<tr>
+		<td colspan="3"><h1 style="color: red;">Domino's Menu</h1></td>
+	</tr>
+	<tr>
+		<th>Item</th>
+		<th>Quantity</th>
+		<th>Price</th>
+	</tr>
+	<tr>
+		<td>Pizza</td>
+		<td><input type="text" id="a"></td>
+		<td>Rs.<input type="text" id="b"></td>
+	</tr>
+	<tr>
+		<td>Garlic Bread</td>
+		<td><input type="text" id="c"></td>
+		<td>Rs.<input type="text" id="d"></td>
+	</tr>
+	<tr>
+		<td>Browne</td>
+		<td><input type="text" id="e"></td>
+		<td>Rs.<input type="text" id="f"></td>
+	</tr>
+	<tr>
+		<td>Shakes</td>
+		<td><input type="text" id="g"></td>
+		<td>Rs.<input type="text" id="h"></td>
+	</tr>
+	<tr>
+		<td>Cool Drink</td>
+		<td><input type="text" id="i"></td>
+		<td>Rs.<input type="text" id="j"></td>
+	</tr>
+	<tr>
+		<td><input type="button" value="Calculate Bill" onclick="fun()" style="color: white;background-color: brown;"></td>
+	</tr>
+	<tr>
+		<td colspan="3">Total:<b id="bill">	</b></td>
+	</tr>
+</table>
+</form></center>
+<script type="text/javascript">
+	function fun()
+	{
+		p1=Number(document.getElementById("a").value);
+		p=Number(document.getElementById("b").value);
+		q1=Number(document.getElementById("c").value);
+		q=Number(document.getElementById("d").value);
+		r1=Number(document.getElementById("e").value);
+		r=Number(document.getElementById("f").value);
+		s1=Number(document.getElementById("g").value);
+		s=Number(document.getElementById("h").value);
+		t1=Number(document.getElementById("i").value);
+		t=Number(document.getElementById("j").value);
+		u=(p*p1)+(q*q1)+(r*r1)+(s*s1)+(t*t1);
+		document.getElementById("bill").innerHTML=u;
+	}
+</script>
+</body>
+</html>
