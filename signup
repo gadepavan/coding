@@ -10,7 +10,7 @@
 		}
 	form
 	{
-		width: 50%;
+		width: 40%;
 		background-color: white;
 		margin-top: 90px;
 		padding-top: 30px;
